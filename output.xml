@@ -1,53 +1,161 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.1 (Python 3.10.9 on win32)" generated="20230107 23:33:52.566" rpa="false" schemaversion="3">
-<suite id="s1" name="TC1" source="D:\python_projects\robot_framework\TestCases\TC1.robot">
-<test id="s1-t1" name="LoginTest" line="9">
+<robot generator="Robot 6.0.1 (Python 3.10.9 on win32)" generated="20230108 16:05:52.629" rpa="false" schemaversion="3">
+<suite id="s1" name="Radiobuttons" source="D:\python_projects\robot_framework\TestCases\Radiobuttons.robot">
+<test id="s1-t1" name="Testing Radio Buttons and Check Boxes" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230107 23:33:52.780" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
-<status status="PASS" starttime="20230107 23:33:52.780" endtime="20230107 23:33:55.345"/>
+<msg timestamp="20230108 16:05:52.839" level="INFO">Opening browser 'chrome' to base url 'https://sliitacademy.lk/new-intake/'.</msg>
+<status status="PASS" starttime="20230108 16:05:52.838" endtime="20230108 16:06:02.172"/>
 </kw>
-<kw name="loginToApplication">
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:user-name</arg>
-<arg>standard_user</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230107 23:33:55.347" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
-<status status="PASS" starttime="20230107 23:33:55.346" endtime="20230107 23:33:55.435"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230108 16:06:02.173" endtime="20230108 16:06:02.308"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id:password</arg>
-<arg>secret_sauce</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230107 23:33:55.435" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
-<status status="PASS" starttime="20230107 23:33:55.435" endtime="20230107 23:33:55.518"/>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230108 16:06:02.308" endtime="20230108 16:06:02.309"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id:login-button</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230107 23:33:55.518" level="INFO">Clicking element 'id:login-button'.</msg>
-<status status="PASS" starttime="20230107 23:33:55.518" endtime="20230107 23:33:55.601"/>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://*[text()='Online Registration']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230108 16:06:02.310" level="INFO">Clicking link 'xpath://*[text()='Online Registration']'.</msg>
+<status status="PASS" starttime="20230108 16:06:02.309" endtime="20230108 16:06:08.304"/>
 </kw>
-<status status="PASS" starttime="20230107 23:33:55.346" endtime="20230107 23:33:55.601"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radio-27</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230108 16:06:08.305" level="INFO">Selecting 'Male' from radio button 'radio-27'.</msg>
+<status status="PASS" starttime="20230108 16:06:08.304" endtime="20230108 16:06:10.356"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230107 23:33:55.602" endtime="20230107 23:33:57.761"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radio-125</arg>
+<arg>Local</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230108 16:06:10.357" level="INFO">Selecting 'Local' from radio button 'radio-125'.</msg>
+<status status="PASS" starttime="20230108 16:06:10.357" endtime="20230108 16:06:12.392"/>
 </kw>
-<status status="PASS" starttime="20230107 23:33:52.779" endtime="20230107 23:33:57.763"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radio-691</arg>
+<arg>Colombo</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230108 16:06:12.393" level="INFO">Selecting 'Colombo' from radio button 'radio-691'.</msg>
+<status status="PASS" starttime="20230108 16:06:12.393" endtime="20230108 16:06:14.480"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radio-166</arg>
+<arg>English</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230108 16:06:14.482" level="INFO">Selecting 'English' from radio button 'radio-166'.</msg>
+<status status="PASS" starttime="20230108 16:06:14.481" endtime="20230108 16:06:16.543"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radio-608</arg>
+<arg>Social Media</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230108 16:06:16.546" level="INFO">Selecting 'Social Media' from radio button 'radio-608'.</msg>
+<status status="PASS" starttime="20230108 16:06:16.545" endtime="20230108 16:06:19.689"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>radio-691</arg>
+<arg>Colombo</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230108 16:06:19.690" level="INFO">Selecting 'Colombo' from radio button 'radio-691'.</msg>
+<status status="PASS" starttime="20230108 16:06:19.690" endtime="20230108 16:06:21.725"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>checkbox-272[]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230108 16:06:21.726" level="INFO">Selecting checkbox 'checkbox-272[]'.</msg>
+<msg timestamp="20230108 16:06:27.011" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230108 16:06:27.012" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="checkbox" name="checkbox-272[]" value="BSc(Hons) Computer Science &amp;amp; Software Engineering"&gt; is not clickable at point (344, 7). Other element would receive the click: &lt;div class="header-contact-1 col-3"&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0061F243]
+	(No symbol) [0x005A7FD1]
+	(No symbol) [0x0049D04D]
+	(No symbol) [0x004D28B9]
+	(No symbol) [0x004D08CC]
+	(No symbol) [0x004CE4CB]
+	(No symbol) [0x004CD164]
+	(No symbol) [0x004C32A6]
+	(No symbol) [0x004E858C]
+	(No symbol) [0x004C2BFF]
+	(No symbol) [0x004E8804]
+	(No symbol) [0x004FC9EB]
+	(No symbol) [0x004E8386]
+	(No symbol) [0x004C163C]
+	(No symbol) [0x004C269D]
+	GetHandleVerifier [0x008B9A22+2655074]
+	GetHandleVerifier [0x008ACA24+2601828]
+	GetHandleVerifier [0x006C8C0A+619850]
+	GetHandleVerifier [0x006C7830+614768]
+	(No symbol) [0x005B05FC]
+	(No symbol) [0x005B5968]
+	(No symbol) [0x005B5A55]
+	(No symbol) [0x005C051B]
+	BaseThreadInitThunk [0x767200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77297BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77297B8E+238]
+</msg>
+<status status="FAIL" starttime="20230108 16:06:21.726" endtime="20230108 16:06:27.015"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>checkbox-323[]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230108 16:06:27.016" endtime="20230108 16:06:27.016"/>
+</kw>
+<kw name="Unselect Checkbox" library="SeleniumLibrary">
+<arg>checkbox-272[]</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230108 16:06:27.016" endtime="20230108 16:06:27.017"/>
+</kw>
+<status status="FAIL" starttime="20230108 16:05:52.838" endtime="20230108 16:06:27.017">ElementClickInterceptedException: Message: element click intercepted: Element &lt;input type="checkbox" name="checkbox-272[]" value="BSc(Hons) Computer Science &amp;amp; Software Engineering"&gt; is not clickable at point (344, 7). Other element would receive the click: &lt;div class="header-contact-1 col-3"&gt;...&lt;/div&gt;
+  (Session info: chrome=108.0.5359.125)
+Stacktrace:
+Backtrace:
+	(No symbol) [0x0061F243]
+	(No symbol) [0x005A7FD1]
+	(No symbol) [0x0049D04D]
+	(No symbol) [0x004D28B9]
+	(No symbol) [0x004D08CC]
+	(No symbol) [0x004CE4CB]
+	(No symbol) [0x004CD164]
+	(No symbol) [0x004C32A6]
+	(No symbol) [0x004E858C]
+	(No symbol) [0x004C2BFF]
+	(No symbol) [0x004E8804]
+	(No symbol) [0x004FC9EB]
+	(No symbol) [0x004E8386]
+	(No symbol) [0x004C163C]
+	(No symbol) [0x004C269D]
+	GetHandleVerifier [0x008B9A22+2655074]
+	GetHandleVerifier [0x008ACA24+2601828]
+	GetHandleVerifier [0x006C8C0A+619850]
+	GetHandleVerifier [0x006C7830+614768]
+	(No symbol) [0x005B05FC]
+	(No symbol) [0x005B5968]
+	(No symbol) [0x005B5A55]
+	(No symbol) [0x005C051B]
+	BaseThreadInitThunk [0x767200F9+25]
+	RtlGetAppContainerNamedObjectPath [0x77297BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77297B8E+238]
+</status>
 </test>
-<status status="PASS" starttime="20230107 23:33:52.568" endtime="20230107 23:33:57.769"/>
+<status status="FAIL" starttime="20230108 16:05:52.632" endtime="20230108 16:06:27.021"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Radiobuttons">Radiobuttons</stat>
 </suite>
 </statistics>
 <errors>
